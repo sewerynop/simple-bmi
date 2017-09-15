@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--PROSTE BMI-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Proste_BMI" customModuleProvider="target" sceneMemberID="viewController">
@@ -36,7 +36,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4H-hB-7Wj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4H-hB-7Wj">
                                 <rect key="frame" x="137" y="74" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="6l6-kR-dhB"/>
@@ -109,7 +109,7 @@
                             <constraint firstItem="L4H-hB-7Wj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="121" id="z5o-cJ-yaE"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="jwp-Ue-QWd"/>
+                    <navigationItem key="navigationItem" title="PROSTE BMI" id="jwp-Ue-QWd"/>
                     <connections>
                         <outlet property="labelScore" destination="L4H-hB-7Wj" id="XKH-9A-zVt"/>
                         <outlet property="textFieldHeight" destination="BWc-l8-nqC" id="ItT-Cl-N3i"/>

@@ -12,19 +12,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var labelScore: UILabel!
     @IBOutlet weak var textFieldHeight: UITextField!
     @IBOutlet weak var textFieldWeight: UITextField!
-    
-    // height - wzrost
-    // weight - waga
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        textFieldHeight.keyboardType = UIKeyboardType.numberPad
+        textFieldWeight.keyboardType = UIKeyboardType.numberPad
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     @IBAction func btnCount(_ sender: Any) {
         
@@ -42,22 +41,29 @@ class ViewController: UIViewController {
         
         if height != nil && weight != nil {
             let hundret = height! / 100
-            let score = weight! / (hundret * hundret)
-            
-            //performSegue(withIdentifier: "segue", sender: self)
-            
-            labelScore.text = String(format: "%.2f", score)
-        }else{
+            let scoree = weight! / (hundret * hundret)
+            labelScore.text = String(format: "%.2f", scoree)
+            }else{
             present(alert, animated: true, completion: nil)
-        }
+            }
     }
-    
-    
+
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
         
     }
     
+    //    performSegue(withIdentifier: "segueV", sender: scoree)
+    
+    //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    //        if segue.identifier == "segueV" {
+    //            if let destination = segue.destination as? SecondViewController {
+    //                destination.passData = sender as? String
+    //            }
+    //        }
+    //   
+    //    }
+
 
 
 }
